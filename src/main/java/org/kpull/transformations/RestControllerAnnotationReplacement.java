@@ -73,7 +73,7 @@ public class RestControllerAnnotationReplacement {
                 AnnotationExpr annotation = annotationsIterator.next();
                 if (annotation.getName().getName().equals("ResponseBody")) {
                     annotationsIterator.remove();
-                    return;
+                    break;
                 }
             }
         }
